@@ -13,7 +13,7 @@ function ProductCard({ product }) {
 
   return (
     <div className="flex flex-col w-90 shrink-0 h-170 "
-              onClick={() => navigate(`/equipment`)}
+             
     >
 
       {/* Image slider */}
@@ -22,6 +22,7 @@ function ProductCard({ product }) {
         <img
           src={product.images[current]}
           className="w-full h-full object-cover transition duration-300 cursor-pointer"
+           onClick={() => navigate(`/equipment`)}
           alt={product.name}
         />
 
